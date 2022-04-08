@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  // display flex;
-  // justify-content: space-between;
   padding: 2em;
 `;
 export const Button = styled.button`
-  padding: 15px 50px;
+  padding: 15px 40px;
   color: #1864ab;
   border: 2px #1864ab solid;
+  border-radius: 30px;
   background-color: #fff;
   @media screen and (max-width:650px){
     padding: 15px 20px;
