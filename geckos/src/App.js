@@ -3,6 +3,7 @@ import Global from "./style/Global";
 import {Routes,Route} from "react-router-dom";
 import Home from "./pages/home/Home.jsx";
 import User from "./pages/user/User.jsx"
+import SingleQuestionAndAnswer from "./pages/singleQuestion/SingleQuestionAndAnswer.jsx";
 
 function App() {
   const theme = {
@@ -17,6 +18,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/user" element={<User />} />
+        <Route path="/Singlequestion" element={<SingleQuestionAndAnswer />} />
     </Routes>
     </ThemeProvider>
     </>
