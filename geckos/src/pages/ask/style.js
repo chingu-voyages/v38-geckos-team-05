@@ -65,3 +65,12 @@ export const Button = styled.button`
     color: #fff;
   }
 `;
+
+export const SolidButton = styled(Button)`
+  background-color: #1864ab;
+  color: #fff;
+  &:hover {
+    color: #1864ab;
+    background-color: #fff;
+  }
+`

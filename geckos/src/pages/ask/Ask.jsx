@@ -1,4 +1,4 @@
-import {Main, Div, Container, H1, Img, Textarea, Input, Button} from "./style.js";
+import {Main, Div, Container, H1, Img, Textarea, Input, Button, SolidButton} from "./style.js";
 import RecentUserQuestions from "../../components/question/RecentUserQuestions";
 import HomeButton from "../../components/homebutton/HomeButton";
 import {Link} from "react-router-dom";
@@ -15,7 +15,7 @@ const Ask = ()=>{
           <form>
             <Textarea rows="20" cols="50" placeholder="Type your question here"></Textarea>
             <Input placeholder="Topic or Category"/>
-            <Button type="submit">Submit Question</Button>
+            <SolidButton type="submit">Submit Question</SolidButton>
           </form>
           <Link to="/user">
             <Button>View All Farhani's Question</Button>
