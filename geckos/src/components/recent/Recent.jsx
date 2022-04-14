@@ -7,16 +7,16 @@ const Recent = ()=>{
        <H2>Recent AMA'S</H2>
         <Ul>
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/user">1. Mohamed Ahmed</Link>
           </List>  
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/user">1. Mohamed Ahmed</Link>
           </List>   
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/user">1. Mohamed Ahmed</Link>
           </List>   
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/user">1. Mohamed Ahmed</Link>
           </List>    
         </Ul>
       </Contianer>

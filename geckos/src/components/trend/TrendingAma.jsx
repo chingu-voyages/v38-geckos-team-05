@@ -7,16 +7,16 @@ const TrendingAma = ()=>{
               <H2>Trending  AMA'S</H2>
         <Ul>
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/Singlequestion">1. Mohamed Ahmed</Link>
           </List>  
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/Singlequestion">1. Mohamed Ahmed</Link>
           </List>   
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/Singlequestion">1. Mohamed Ahmed</Link>
           </List>   
           <List>
-           <Link to="">1. Mohamed Ahmed</Link>
+           <Link to="/Singlequestion">1. Mohamed Ahmed</Link>
           </List>    
         </Ul>
         </Contianer>
