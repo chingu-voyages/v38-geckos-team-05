@@ -64,4 +64,16 @@ export const Button = styled.button`
   }
 `;
 
-
+export const ButtonSolid = styled.button`
+  padding: 15px 40px;
+  color: #fff;
+  border: 2px #1864ab solid;
+  background-color: #1864ab;
+  @media screen and (max-width:650px){
+    padding: 15px 20px;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #1864ab;
+  }
+`;
