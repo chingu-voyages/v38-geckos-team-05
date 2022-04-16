@@ -1,7 +1,7 @@
 {
   "name": "geckos",
   "version": "0.1.0",
-  "homepage":"https://chingu-voyages.github.io/v38-geckos-team-05",
+  "homepage": "https://chingu-voyages.github.io/v38-geckos-team-05",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
