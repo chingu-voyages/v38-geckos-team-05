@@ -49,9 +49,9 @@ export const A = styled.a`
 export const Button = styled.button`
   padding: 15px 40px;
   color: #1864ab;
-  /* border: 2px #1864ab solid; */
-  /* border-radius: 30px; */
-  background-color: #ccd2df;
+  border: 2px #1864ab solid;
+  background-color: #fff;
+  margin-bottom: 30px;
   @media screen and (max-width:768px){
     padding: 13px 10px;
   }
