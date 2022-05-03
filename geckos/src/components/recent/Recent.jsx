@@ -1,23 +1,16 @@
 import {Ul,List,H2,Contianer} from "./style/recent";
 import {Link} from "react-router-dom";
-const Recent = ()=>{
-  
+const Recent = ( data )=>{
+ 
     return (
       <Contianer>
        <H2>Recent AMA'S</H2>
         <Ul>
-          <List>
-           <Link to="/user">1. Mohamed Ahmed</Link>
-          </List>  
-          <List>
-           <Link to="/user">1. Mohamed Ahmed</Link>
-          </List>   
-          <List>
-           <Link to="/user">1. Mohamed Ahmed</Link>
-          </List>   
-          <List>
-           <Link to="/user">1. Mohamed Ahmed</Link>
-          </List>    
+          {data.topUsers.map(item => (
+            <List>
+              <Link to={item.username}>{item.id}. <span>{item.name}</span></Link>
+            </List>
+          ))}   
         </Ul>
       </Contianer>
     );
