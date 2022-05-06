@@ -8,7 +8,7 @@ const TrendingTopics = ( data )=>{
         <Ul>
           {data.topUsers.map(item => (
             <List>
-              <Link to={item.username}>{item.id}. <span>{item.name}</span></Link>
+              <Link to={`/${item.id}`}>{item.id}. <span>{item.name}</span></Link>
             </List>
           ))}    
         </Ul>
