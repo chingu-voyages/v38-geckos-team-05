@@ -12,15 +12,17 @@ function App() {
       bg:"#252525",
     },
   };
+
   return (
     <>
     <ThemeProvider  theme={theme}>
     <Global/>
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/user" element={<User />} />
         <Route path="/Singlequestion" element={<SingleQuestionAndAnswer />} />
-        <Route path="/ask" element={<Ask />}/>
+        <Route path="/ask" element={<Ask />} />
+        <Route path=":userID" element={<User />} />
+        <Route path="*" element={ <p>Nothing here!</p> } />
     </Routes>
     </ThemeProvider>
     </>

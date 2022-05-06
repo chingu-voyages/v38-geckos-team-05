@@ -34,7 +34,12 @@ function User() {
   let params = useParams();
 
   if (isDataLoading || !data){
-    return (<p>Data is loading...</p>)
+    return (
+      <Main>
+        <HomeButton/>
+        <p>Data is loading...</p>
+      </Main>
+    )
   }
   else {
     return (
@@ -44,13 +49,6 @@ function User() {
         <Container>      
           <Div>
             <AllUserQuestions data= { (data.filter((post) => post.userId === parseInt(params.userID, 10) )) }/>
-            {(data.filter((post) => post.userId === parseInt(params.userID, 10) )).map((item) => (
-              <>
-                <p>{item.id}</p>
-                <p>{item.title}</p>
-                <p>{item.body}</p>
-              </>
-            ))}
             <Pagination/>
           </Div>
           <RecentUserQuestions/>
@@ -60,35 +58,4 @@ function User() {
   }
 }
 
-{/*  useEffect(() => { 
-    const fetchData = () => {
-      fetch('http://jsonplaceholder.typicode.com/posts')
-        .then(response => response.json())
-        .then((usersdata) => { setData(usersdata) })
-      };
-      fetchData();
-  },[]);
-  console.log(usersdata);
-}
-const User = ()=>{
-*/}
-
-{/*
-  let params = useParams();
-  
-    return(
-     <Main>
-      <HomeButton/>
-      <H1>Simple AMA: { params.userID }</H1>
-      <Container>      
-        <Div>
-          <AllUserQuestions/>
-          <Pagination/>
-        </Div>
-        <RecentUserQuestions/>
-      </Container>  
-     </Main>
-    );
-}
-*/}
 export default User;
