@@ -4,6 +4,7 @@ import RecentUserQuestions from "../../components/question/RecentUserQuestions";
 import Pagination from "../../components/pagination/Pagination";
 import HomeButton from "../../components/homebutton/HomeButton";
 
+
 import {Link, useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
 
@@ -42,6 +43,7 @@ function User() {
         <H1>Simple AMA: Influencer { params.userID }</H1>
         <Container>      
           <Div>
+            <AllUserQuestions data= { (data.filter((post) => post.userId === parseInt(params.userID, 10) )) }/>
             {(data.filter((post) => post.userId === parseInt(params.userID, 10) )).map((item) => (
               <>
                 <p>{item.id}</p>
@@ -49,15 +51,10 @@ function User() {
                 <p>{item.body}</p>
               </>
             ))}
-            <AllUserQuestions data= { (data.filter((post) => post.userId === parseInt(params.userID, 10) )) }/>
             <Pagination/>
           </Div>
           <RecentUserQuestions/>
         </Container>  
-        
-    
-        <h2> Single User: {params.userID} </h2>
-        {/*<p>Title:{userdata.title}</p>*/}
       </Main>
     )
   }

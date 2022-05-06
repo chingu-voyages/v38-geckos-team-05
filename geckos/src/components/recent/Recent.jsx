@@ -11,7 +11,6 @@ const Recent = ( data )=>{
         <Ul>
           {data.topUsers.map(item => (
             <List>
-              {/*<Link to="/user">{item.id}. <span>{item.name}</span></Link>*/}
               <Link to={`/${item.id}`}>{item.id}. <span>{item.name}</span></Link>
             </List>
           ))}   
