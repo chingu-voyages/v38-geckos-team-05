@@ -49,11 +49,10 @@ if (isDataLoading || !data){
         <HomeButton />
         
         <H4>Dummy question { params.postID } Heading</H4>
-        { (data.filter((post) => post.id === parseInt(params.postID, 10) )) }
         <Container>
           <Div>
-            <SingleQuestion2 />
-            <SingleAnswer />
+            <SingleQuestion2 data = { (data.filter((post) => post.id === parseInt(params.postID, 10) )) } />
+            <SingleAnswer data = { (data.filter((post) => post.id === parseInt(params.postID, 10) )) } />
             <Div>
             <span>
               <Button>Category 1</Button>
