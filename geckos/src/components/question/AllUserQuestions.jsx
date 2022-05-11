@@ -5,9 +5,10 @@ const AllUserQuestions = (data)=>{
       <Container>
           {data.data.map((item) => (
           <>
+
             <p>{item.title}</p>
             <p>{item.body}</p>
-            <Link to="../Singlequestion">
+            <Link to={`./${item.id}`}>
               <Button>
                 View Answer
               </Button>
