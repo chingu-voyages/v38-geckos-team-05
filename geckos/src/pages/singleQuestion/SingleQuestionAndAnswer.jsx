@@ -30,7 +30,7 @@ function useFetch(url) {
 }
 
 function SingleQuestionAndAnswer() {
-  const [isDataLoading, data] = useFetch('http://jsonplaceholder.typicode.com/posts');
+  const [isDataLoading, data] = useFetch('https://jsonplaceholder.typicode.com/posts');
   let params = useParams();
   console.log(data);
   console.log(typeof(data))

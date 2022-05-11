@@ -29,7 +29,7 @@ function useFetch(url) {
 }
 
 function User() {
-  const [isDataLoading, data] = useFetch('http://jsonplaceholder.typicode.com/posts');
+  const [isDataLoading, data] = useFetch('https://jsonplaceholder.typicode.com/posts');
 
   let params = useParams();
 
