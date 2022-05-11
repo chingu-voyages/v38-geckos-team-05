@@ -22,6 +22,7 @@ function App() {
         <Route path="/Singlequestion" element={<SingleQuestionAndAnswer />} />
         <Route path="/ask" element={<Ask />} />
         <Route path=":userID" element={<User />} />
+        <Route path=":userID/:postID" element={<SingleQuestionAndAnswer />} />
         <Route path="*" element={ <p>Nothing here!</p> } />
     </Routes>
     </ThemeProvider>
