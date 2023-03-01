@@ -1,4 +1,4 @@
-import {Container,H1,ContainerForm,GridConatiner,Input,Form} from "./style.js";
+import {Container,H1,ContainerForm,GridContainer,Input,Form,SearchResult} from "./style.js";
 import TrendingAma from "../../components/trend/TrendingAma";
 import TrendingTopics from "../../components/trend/TrendingTopics";
 import Recent from "../../components/recent/Recent";
@@ -6,6 +6,8 @@ import React, { useState, useEffect } from 'react';
 
 function Home() {
   const [data, setData] = useState([]); 
+  const [searchInput, setSearchInput] = useState("");
+  const filteredNames = [];
 
   useEffect(() => { 
     const fetchData = () => {
@@ -16,20 +18,56 @@ function Home() {
       fetchData();
   },[]);
 
+// Search Feature
+  const handleChange = (e) => {
+    e.preventDefault();
+    setSearchInput(e.target.value);
+  };
+
+  if (searchInput.length > 0) {
+    console.log(searchInput)
+    data.filter((user) => {
+      if (user.name.indexOf(searchInput)> -1){
+        filteredNames.push(user);
+      }
+      return filteredNames
+    })
+  }  
+
+
   return(
     <>
       <Container>
          <H1>Simple AMA</H1>       
          <Form>
            <ContainerForm>
-            <Input type="search" placeholder="search your AMA"/>     
+            <Input 
+              type="search" 
+              placeholder="search your AMA"
+              onChange={handleChange}
+              value={searchInput} 
+            />     
            </ContainerForm>
          </Form>
-        <GridConatiner>
+         <SearchResult>
+          {
+            filteredNames.map((user) => {
+              return(
+                <div>
+                  <p>
+                    <span>{user.name}</span> 
+                  </p>
+                </div>
+              )
+            })
+          }
+          </SearchResult>
+        <GridContainer>
+          
         <TrendingAma topUsers = { data } />
         <TrendingTopics topUsers ={ data } />
         <Recent topUsers = { data } />
-        </GridConatiner>  
+        </GridContainer>  
       </Container>  
      </>
   );

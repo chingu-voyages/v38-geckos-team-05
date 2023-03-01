@@ -31,6 +31,12 @@ padding:0.3em 0.2em;
 
 }
 `;
+export const  SearchResult = styled.div`
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+`;
+
 export const ContainerForm = styled.div`
 width:100%;
 `;
@@ -38,7 +44,7 @@ export const H1 = styled.h1`
   width:100%;
   text-align:center;
 `;
-export const GridConatiner = styled.div`
+export const GridContainer = styled.div`
     width:90%;
     height:100%;
     display:grid;
