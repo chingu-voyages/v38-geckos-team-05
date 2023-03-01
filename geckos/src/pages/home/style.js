@@ -35,6 +35,9 @@ export const  SearchResult = styled.div`
 text-align: center;
 padding-top: 30px;
 padding-bottom: 30px;
+& div {
+  padding-bottom: 20px;
+}
 `;
 
 export const ContainerForm = styled.div`

@@ -3,6 +3,7 @@ import TrendingAma from "../../components/trend/TrendingAma";
 import TrendingTopics from "../../components/trend/TrendingTopics";
 import Recent from "../../components/recent/Recent";
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 function Home() {
   const [data, setData] = useState([]); 
@@ -27,8 +28,9 @@ function Home() {
   if (searchInput.length > 0) {
     console.log(searchInput)
     data.filter((user) => {
-      if (user.name.indexOf(searchInput)> -1){
+      if (user.name.toUpperCase().indexOf(searchInput.toUpperCase())> -1){
         filteredNames.push(user);
+        console.log(user.id)
       }
       return filteredNames
     })
@@ -54,9 +56,7 @@ function Home() {
             filteredNames.map((user) => {
               return(
                 <div>
-                  <p>
-                    <span>{user.name}</span> 
-                  </p>
+                    <Link to={`/${user.id}`}>{user.name}</Link>
                 </div>
               )
             })
