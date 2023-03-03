@@ -5,7 +5,7 @@ import Pagination from "../../components/pagination/Pagination";
 import HomeButton from "../../components/homebutton/HomeButton";
 
 
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
 
 function useFetch(url) {
