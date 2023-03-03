@@ -6,7 +6,6 @@ The project uses React and React Router.
 
 ### Features
 
-
 ## Running the project locally
 1. Clone the repo locally.
 2. Go to geckos directory.
@@ -15,6 +14,7 @@ The project uses React and React Router.
 5. Visit ```localhost:3000``` on your browser to interact with the project.
 
 
+## SETUP
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
