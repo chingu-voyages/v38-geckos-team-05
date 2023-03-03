@@ -1,14 +1,20 @@
-# voyage-tasks
+# Simple AMA
+The project is live at [chingu-voyages.github.io/v38-geckos-team-05/](https://chingu-voyages.github.io/v38-geckos-team-05/)
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+## Overview
+The project uses React and React Router.
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+### Features
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
 
-> Own it & Make it your Own!
+## Running the project locally
+1. Clone the repo locally.
+2. Go to geckos directory.
+3. Run ```npm install``` to install all the dependencies.
+4. Use ```npm start``` to run the project on your local server.
+5. Visit ```localhost:3000``` on your browser to interact with the project.
+
+
+Use https://github.com/chingu-voyages/v37-geckos-team-04 as guidance
+
+

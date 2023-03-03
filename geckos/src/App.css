@@ -2,10 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logo {
+  font-size: 2em;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
