@@ -1,4 +1,3 @@
-import {useState, useEffect } from 'react';
 import {Ul,List,H2,Contianer} from "./style/recent";
 import {Link} from "react-router-dom";
 

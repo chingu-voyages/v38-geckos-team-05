@@ -25,7 +25,7 @@ function useFetch(url) {
       }
     };
     fetchData();
-  },[]);
+  },[url]);
   return[loadingData, data];
 }
 
