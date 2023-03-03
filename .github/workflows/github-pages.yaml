@@ -49,10 +49,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
       # Github Pages Part
       - name: Setup Pages
         uses: actions/configure-pages@v3
