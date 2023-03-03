@@ -13,7 +13,6 @@ The project uses React and React Router.
 4. Use ```npm start``` to run the project on your local server.
 5. Visit ```localhost:3000``` on your browser to interact with the project.
 
-
 ## SETUP
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
